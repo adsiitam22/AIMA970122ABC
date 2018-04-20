@@ -1,5 +1,12 @@
 package  mx.itam.adsi.solu;
 public class Solu {
+
+	/**
+	*Clase Nodo, es una lista simple
+	*que sigue una estructura de cola
+	*
+	*/
+
     public class Node {
         String data;
         Node next;
@@ -8,7 +15,12 @@ public class Solu {
             this.data = data;
         }
         
+
+	/**
+	Observa si el nodo está vacío o no, entrega el último nodo con datos.
+	*/
         Node gus() {
+	    // Si el nodo "hijo" está vacío regresa el último nodo con datos
             if(next == null) return this;
             Node otro = next;
             next      = null;
